@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            border: 2px solid black;
+
+        }
+        /* .mainImage:hover{
+            margin : 20px;
+            padding: 23px;
+            cursor: pointer;
+        } */
+
+        #mainImage {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 70px;
+            margin: 10px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Image Gallery</h2>
+        
+        
+        <img id="mainImage"
+        src="https://picsum.photos/id/10/400/250">
+        
+        <br><br>
+        
+        
+        <img class="thumbnail"
+        src="https://picsum.photos/id/10/400/250">
+        
+        <img class="thumbnail"
+        src="https://picsum.photos/id/20/400/250">
+
+        <img class="thumbnail"
+        src="https://picsum.photos/id/30/400/250">
+    
+        <img class="thumbnail"
+        src="https://picsum.photos/id/40/400/250">
+    </div>
+    
+    <script>
+        
+        let mainImage = document.getElementById("mainImage");
+
+        
+        let thumbnails =
+            document.querySelectorAll(".thumbnail");
+
+        
+        thumbnails.forEach(function(img) {
+
+            img.addEventListener("click", function() {
+
+                
+                mainImage.src = img.src;
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+
