@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Question 8</title>
+</head>
+<body>
+<script>
+    let n = 12321;
+    let rev = 0;
+    let original = n;
+    while(n<0){
+        let digit = n%10;
+        rev = rev*10+digit;
+        n = Math.floor(n/10);
+    }
+    if(rev===original){
+        console.log("Palindrome Number")
+    }else{
+        console.log("Not a Palindrome");
+    }
+
+</script>
+</body>
+</html>

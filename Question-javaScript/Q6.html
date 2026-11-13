@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Question 6</title>
+</head>
+<body>
+<script>
+let n = 9087654;
+let count =0;
+let even =0;
+let odd =0;
+while(n>0){
+    let digit = n%10;
+    count++;
+    if(digit%2 ==0){
+        even++;
+    }else{
+        odd++;
+    }
+    n = Math.floor(n/10);
+}
+console.log(count);
+console.log(even);
+console.log(oddd);
+
+</script>
+</body>
+</html>

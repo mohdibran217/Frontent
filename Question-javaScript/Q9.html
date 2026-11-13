@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+<script>
+let n = 5837462;
+let evenSum = 0;
+let OddSum =0;
+while(n>0){
+    let digit = n%10;
+    if(digit %2 ==0){
+        evenSum = evenSum + digit;
+    }else{
+        OddSum =OddSum + digit;
+    }
+    n = Math.floor(n/10);
+}
+console.log(evenSum);
+console.log(OddSum);
+</script>
+</body>
+</html>
