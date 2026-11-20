@@ -1,0 +1,30 @@
+
+
+body {
+    padding-left: 20vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    border: 5px solid rgb(220, 132, 55);
+    width: 480px;
+    margin: auto;
+}
+
+.chess {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.wbox {
+    height: 60px;
+    background-color: white;
+}
+
+.rbox {
+    height: 60px;
+    background-color: rgb(161, 58, 58);
+}
